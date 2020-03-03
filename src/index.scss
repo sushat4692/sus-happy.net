@@ -1,0 +1,143 @@
+// @import-normalize;
+
+html {
+  color: #fff;
+  font: 100 10px/1.4 monospace;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+body {
+  background: #272822;
+  font-family: "Inconsolata", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #f92672;
+  display: inline-block;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #f92672;
+  color: #272822;
+}
+
+a::before {
+  content: "[";
+}
+
+a::after {
+  content: "]";
+}
+
+// Heading
+h1,
+.h1 {
+  color: #e6db74;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-top: 0;
+  margin-bottom: 1em;
+
+  &::before {
+    content: '#';
+    margin-right: 0.5em;
+  }
+}
+
+h2,
+.h2 {
+  color: #888;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-top: 0;
+  margin-bottom: 1em;
+
+  &::before {
+    content: '##';
+    margin-right: 0.5em;
+  }
+}
+
+h3,
+.h3 {
+  color: #fff;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// Paragraph
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+// List
+dl {
+  margin-top: 0;
+  margin-bottom: 1em;
+
+  dt {
+    color: #fd971f;
+
+    &::before {
+      color: #888;
+      content: '*';
+      margin-right: 0.5em;
+    }
+  }
+
+  dd {
+    color: #a6e22e;
+    margin-left: 2em;
+  }
+}
+
+ul {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 1em;
+  padding-left: 0;
+
+  li {
+    color: #a6e22e;
+    list-style: none;
+
+    &::before {
+      color: #888;
+      content: '-';
+      margin-right: 0.5em;
+    }
+  }
+}
+
+hr {
+  color: #888;
+  border: none;
+  padding: 0;
+  margin: 1.4rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  -webkit-text-overflow: clip;
+  -o-text-overflow: clip;
+
+  &::before {
+    content: '----------------------------------------------------------------------------------------------------------------------------------------------------------------';
+  }
+}
