@@ -1,4 +1,4 @@
-// @import-normalize;
+/* @import-normalize; */
 
 html {
   color: #fff;
@@ -44,7 +44,7 @@ a::after {
   content: "]";
 }
 
-// Heading
+/* Heading */
 h1,
 .h1 {
   color: #e6db74;
@@ -52,11 +52,12 @@ h1,
   font-weight: inherit;
   margin-top: 0;
   margin-bottom: 1em;
+}
 
-  &::before {
-    content: '#';
-    margin-right: 0.5em;
-  }
+h1::before,
+.h1::before {
+  content: '#';
+  margin-right: 0.5em;
 }
 
 h2,
@@ -66,11 +67,12 @@ h2,
   font-weight: inherit;
   margin-top: 0;
   margin-bottom: 1em;
+}
 
-  &::before {
-    content: '##';
-    margin-right: 0.5em;
-  }
+h2::before,
+.h2::before {
+  content: '##';
+  margin-right: 0.5em;
 }
 
 h3,
@@ -81,31 +83,31 @@ h3,
   font-weight: inherit;
 }
 
-// Paragraph
+/* Paragraph */
 p {
   margin-top: 0;
   margin-bottom: 1em;
 }
 
-// List
+/* List */
 dl {
   margin-top: 0;
   margin-bottom: 1em;
+}
 
-  dt {
-    color: #fd971f;
+dl dt {
+  color: #fd971f;
+}
 
-    &::before {
-      color: #888;
-      content: '*';
-      margin-right: 0.5em;
-    }
-  }
+dl dt::before {
+  color: #888;
+  content: '*';
+  margin-right: 0.5em;
+}
 
-  dd {
-    color: #a6e22e;
-    margin-left: 2em;
-  }
+dl dd {
+  color: #a6e22e;
+  margin-left: 2em;
 }
 
 ul {
@@ -113,17 +115,17 @@ ul {
   margin-left: 0;
   margin-bottom: 1em;
   padding-left: 0;
+}
 
-  li {
-    color: #a6e22e;
-    list-style: none;
+ul li {
+  color: #a6e22e;
+  list-style: none;
+}
 
-    &::before {
-      color: #888;
-      content: '-';
-      margin-right: 0.5em;
-    }
-  }
+ul li::before {
+  color: #888;
+  content: '-';
+  margin-right: 0.5em;
 }
 
 hr {
@@ -136,8 +138,8 @@ hr {
   text-overflow: clip;
   -webkit-text-overflow: clip;
   -o-text-overflow: clip;
+}
 
-  &::before {
-    content: '----------------------------------------------------------------------------------------------------------------------------------------------------------------';
-  }
+hr::before {
+  content: '----------------------------------------------------------------------------------------------------------------------------------------------------------------';
 }

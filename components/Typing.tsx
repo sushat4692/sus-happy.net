@@ -2,28 +2,28 @@ import React, { useReducer, useEffect } from "react";
 import PropTypes from "prop-types";
 
 type Props = {
-  string: string
-  duration: number
-  callback?: Function,
-  start?: boolean
-}
+  string: string;
+  duration: number;
+  callback?: () => void;
+  start?: boolean;
+};
 type State = {
-  display: string
-}
+  display: string;
+};
 
-const sleepTexts: {[key: string]: number} = {
+const sleepTexts: { [key: string]: number } = {
   "?": 6,
   ".": 5,
   ",": 3,
-  " ": 2
+  " ": 2,
 };
-const initialState: State = {display: ""};
+const initialState: State = { display: "" };
 
 const reducer = (_state: State, next: string) => {
-  return {display: next};
+  return { display: next };
 };
 
-const Typing: React.FC<Props> = ({string, duration, callback, start}) => {
+const Typing: React.FC<Props> = ({ string, duration, callback, start }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Typing: React.FC<Props> = ({string, duration, callback, start}) => {
       dispatch(string.substr(0, displayLength));
 
       let ratio = 1;
-      const lastText = string.substr(displayLength-1, 1);
+      const lastText = string.substr(displayLength - 1, 1);
       if (Object.prototype.hasOwnProperty.call(sleepTexts, lastText)) {
         ratio = sleepTexts[lastText];
       }
@@ -52,23 +52,25 @@ const Typing: React.FC<Props> = ({string, duration, callback, start}) => {
     if (start) {
       typeAnimation();
     }
-  }, [string, duration, start]);
+  }, [string, start]);
 
-  return <>
-    {state.display}
-    <i className="typing-icon"></i>
-  </>;
+  return (
+    <>
+      {state.display}
+      <i className="typing-icon"></i>
+    </>
+  );
 };
 
 Typing.propTypes = {
   string: PropTypes.string.isRequired,
   duration: PropTypes.number.isRequired,
   callback: PropTypes.func,
-  start: PropTypes.bool
+  start: PropTypes.bool,
 };
 
 Typing.defaultProps = {
-  start: true
+  start: true,
 };
 
 export default Typing;
