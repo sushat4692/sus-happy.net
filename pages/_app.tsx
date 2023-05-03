@@ -14,13 +14,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <div>
+    <>
       <SideBar />
 
       <main className={styles.main}>
         <Component {...pageProps} />
       </main>
-    </div>
+    </>
   );
 }
 export default MyApp;

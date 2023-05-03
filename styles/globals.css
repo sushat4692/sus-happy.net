@@ -56,7 +56,7 @@ h1,
 
 h1::before,
 .h1::before {
-  content: '#';
+  content: "#";
   margin-right: 0.5em;
 }
 
@@ -71,7 +71,7 @@ h2,
 
 h2::before,
 .h2::before {
-  content: '##';
+  content: "##";
   margin-right: 0.5em;
 }
 
@@ -101,7 +101,7 @@ dl dt {
 
 dl dt::before {
   color: #888;
-  content: '*';
+  content: "*";
   margin-right: 0.5em;
 }
 
@@ -124,7 +124,7 @@ ul li {
 
 ul li::before {
   color: #888;
-  content: '-';
+  content: "-";
   margin-right: 0.5em;
 }
 
@@ -135,11 +135,11 @@ hr {
   margin: 1.4rem 0;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: clip;
   -webkit-text-overflow: clip;
   -o-text-overflow: clip;
+  text-overflow: clip;
 }
 
 hr::before {
-  content: '----------------------------------------------------------------------------------------------------------------------------------------------------------------';
+  content: "----------------------------------------------------------------------------------------------------------------------------------------------------------------";
 }

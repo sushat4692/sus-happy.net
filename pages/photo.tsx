@@ -30,6 +30,8 @@ export default function About() {
         <Typing string="Programming? Yes, it's my hobby. And, taking photos are also my hobby." duration={40}></Typing>
       </p>
 
+      <hr />
+
       <h2>Travel Photo</h2>
       <p>
         {"Sometimes, I've been going out to take pictures. My PhotoStream is hear"} »{" "}
@@ -46,22 +48,6 @@ export default function About() {
         </a>
         .
       </p>
-      <hr />
-      <h2>Equipment</h2>
-      <h3>Cameras</h3>
-      <ul>
-        <li>Canon EOS 5D Mark II</li>
-        <li>Canon EOS Kiss Digital X</li>
-      </ul>
-      <h3>Lenses</h3>
-      <ul>
-        <li>CANON EF-S18-55mm F3.5-5.6 II USM</li>
-        <li>CANON EF50mm F1.8 II</li>
-        <li>CANON EF40mm F2.8 STM</li>
-        <li>SIGMA 20mm F1.8 EX DG ASPHERICAL RF</li>
-        <li>SIGMA 70-300mm F4-5.6 DG MACRO</li>
-      </ul>
-      <p>Luv fixed focal length lens.</p>
     </>
   );
 }

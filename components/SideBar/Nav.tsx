@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
             Blog
           </a>
         </dt>
-        <dd>Go to my blog.</dd>
+        <dd>Link to my blog.</dd>
       </dl>
     </nav>
   );

@@ -27,6 +27,8 @@ export default function About() {
         <Typing string="Do you wanna know me? This is my Biography and Skill sheet." duration={40}></Typing>
       </p>
 
+      <hr />
+
       <h2>Profile</h2>
       <dl>
         <dt>Hometown</dt>
@@ -36,19 +38,22 @@ export default function About() {
         <dt>Working</dt>
         <dd>
           <ul>
-            <li>2009 : Start working as Web developer in Nagoya, Aichi, Japan</li>
-            <li>2015 : Assigned Philippines branch manager, and started working in Makati</li>
+            <li>2009 : Start working as a Web developer in Nagoya, Aichi, Japan</li>
+            <li>2015 : Assigned as Philippines Branch Manager and started working in Makati</li>
           </ul>
         </dd>
       </dl>
+
+      <hr />
+
       <h2>Skill</h2>
       <h3>Front-end</h3>
       <dl>
         <dt>TypeScript/JavaScript</dt>
         <dd>
           <ul>
-            <li>Vue.js (Nuxt.js)</li>
             <li>React (Next.js)</li>
+            <li>Vue.js (Nuxt.js)</li>
             <li>jQuery</li>
           </ul>
         </dd>
@@ -58,6 +63,7 @@ export default function About() {
         <dt>Node.js</dt>
         <dd>
           <ul>
+            <li>NestJS</li>
             <li>express</li>
             <li>micro</li>
           </ul>
@@ -75,7 +81,7 @@ export default function About() {
             </li>
           </ul>
         </dd>
-        <dt>PHP</dt>
+        <dt>Ruby</dt>
         <dd>
           <ul>
             <li>Ruby on Rails</li>
@@ -102,10 +108,13 @@ export default function About() {
       <h3>Applications</h3>
       <ul>
         <li>Electron</li>
+        <li>Tauri</li>
         <li>Flutter</li>
         <li>Ionic</li>
       </ul>
+
       <hr />
+
       <h2>Public Works</h2>
       <h3>GitHub</h3>
       <dl>
@@ -128,8 +137,13 @@ export default function About() {
         <dd>
           <ul>
             <li>
-              <a href="https://github.com/sushat4692/twitch-support-tool" target="_blank" rel="noopener noreferrer">
-                Twitch Support Tool
+              <a href="https://github.com/sushat4692/streaid" target="_blank" rel="noopener noreferrer">
+                Streaid
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sushat4692/inputfollow.js" target="_blank" rel="noopener noreferrer">
+                inputfollow.js
               </a>
             </li>
             <li>
